@@ -8,7 +8,7 @@ PROTO Robokit1 [
   field  SFRotation  rotation        0 1 0 0
   field  SFString    name            "Robokit1"  # Is `Robot.name`.
   field  SFString    controller      "ros"      # Is `Robot.controller`.
-  field  MFString    controllerArgs  ["--name=robokit", "--use-sim-time", "--auto-publish",  "--use-ros-control", "--robot-description"]          # Is `Robot.controllerArgs`.
+  field  MFString    controllerArgs  ["--name=robokit", "--use-sim-time", "--clock", "--auto-publish",  "--use-ros-control", "--robot-description"]          # Is `Robot.controllerArgs`.
   field  SFString    customData      ""          # Is `Robot.customData`.
   field  SFBool      supervisor      TRUE       # Is `Robot.supervisor`.
   field  SFBool      synchronization TRUE        # Is `Robot.synchronization`.
@@ -1104,8 +1104,8 @@ PROTO Robokit1 [
                       Robokit1_HeadMesh {
                       }Camera {
                         fieldOfView            1.05 #2.27  # [0, pi]
-                        width                  320    # [0, inf)
-                        height                 240     # [0, inf)
+                        width                  1280    # [0, inf)
+                        height                 720     # [0, inf)
                         spherical              FALSE    # {TRUE, FALSE}
                         near                   0.01    # [0, inf)
                         far                    0.0     # [0, inf)
