@@ -15,6 +15,11 @@ for Robokit-MV robot</p>
   <depend>rviz</depend>
   <depend>joint_state_publisher</depend>
   <depend>gazebo</depend>
+  <depend>rospy</depend>
+  <depend>message_generation</depend>
+  <depend>std_msgs</depend>
+  <depend>webots_ros</depend>
+
   <export>
     <architecture_independent />
   </export>
